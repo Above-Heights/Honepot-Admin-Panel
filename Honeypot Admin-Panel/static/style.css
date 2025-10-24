@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0c0c0c, #1a1a2e);
+    color: #00ff88;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #00ff88;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #00ff88;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    background: #00ff88;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00cc6a;
+}
+
+.alert {
+    background: #ff4444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+th, td {
+    border: 1px solid #00ff88;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: rgba(0, 255, 136, 0.2);
+}
+
+.hint {
+    font-size: 12px;
+    color: #888;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.message {
+    background: rgba(0, 255, 136, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}

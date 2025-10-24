@@ -1,0 +1,7 @@
+honeypot-admin/
+├── app.py                 # Main application (vulnerable)
+├── database.py            # Database setup
+├── requirements.txt       # Dependencies
+├── templates/             # HTML templates
+├── static/                # CSS/static files
+└── README.md              # This file

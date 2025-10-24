@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>👥 User Management</h2>
+        
+        <!-- Search form -->
+        <form method="GET">
+            <input type="text" name="search" placeholder="Search users..." value="{{ search_query }}">
+            <button type="submit">Search</button>
+        </form>
+        
+        <!-- XSS vulnerable display -->
+        {% if search_query %}
+            <p>Showing results for: <strong>{{ search_query | safe }}</strong></p>
+        {% endif %}
+        
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+            {% for user in users %}
+            <tr>
+                <td>{{ user[0] }}</td>
+                <td>{{ user[1] }}</td>
+                <td>{{ user[2] }}</td>
+                <td>{{ user[3] }}</td>
+                <td>
+                    <a href="{{ url_for('user_profile', id=user[0], message='User+profile+accessed') }}">View</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

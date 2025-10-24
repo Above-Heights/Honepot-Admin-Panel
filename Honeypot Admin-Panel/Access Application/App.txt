@@ -1,0 +1,16 @@
+Open browser: http://localhost:5000
+
+Default credentials:
+
+Username: admin
+
+Password: admin123
+
+
+
+Testing Scenarios:
+
+Login with default credentials
+Navigate to Dashboard
+Check User Management
+View System Logs
